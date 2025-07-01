@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<<<<<<< HEAD
+
 @if(session('message'))
 <div class="todo__alert">
   <div class="todo__alert--success">
