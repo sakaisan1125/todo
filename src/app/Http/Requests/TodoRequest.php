@@ -25,10 +25,11 @@ class TodoRequest extends FormRequest
     {
         return [
             //
-            'content' => [
-                'required',
-                'string',
-                'max:20'
+
+            'content' => ['required',
+                            'string',
+                            'max:20'
+
             ]
         ];
     }
@@ -38,7 +39,8 @@ class TodoRequest extends FormRequest
         return[
             'content.required'=>'Todoを入力してください',
             'content.string'=>'Todoを文字列で入力してください',
-            'content.max:20'=>'Todoを20文字以内で入力してください',
+
+            'content.max:20'=>'Todoを20文字以下で入力してください',
 
         ];
     }
